@@ -1,0 +1,21 @@
+# Robots.txt for House on the Rock Music Machines Guide
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow access to sensitive files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+
+# Allow access to CSS and JS files
+Allow: /styles.css
+Allow: *.css
+Allow: *.js
+
+# Crawl delay to be respectful
+Crawl-delay: 1
+
+# Sitemap (if implemented later)
+# Sitemap: https://houseontherockarchive.com/sitemap.xml

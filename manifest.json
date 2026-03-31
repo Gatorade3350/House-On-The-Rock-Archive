@@ -1,0 +1,50 @@
+{
+  "name": "House on the Rock Music Machines Guide",
+  "short_name": "HOTR Music Guide",
+  "description": "Complete guide to the music machines at House on the Rock attraction",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e8f4f8",
+  "theme_color": "#2c5530",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["travel", "music", "entertainment"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tour 1",
+      "short_name": "Tour 1",
+      "description": "View Tour 1 music machines",
+      "url": "/#tour1",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tour 2",
+      "short_name": "Tour 2",
+      "description": "View Tour 2 music machines",
+      "url": "/#tour2",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tour 3",
+      "short_name": "Tour 3",
+      "description": "View Tour 3 music machines",
+      "url": "/#tour3",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
