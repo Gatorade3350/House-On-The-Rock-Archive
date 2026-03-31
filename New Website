@@ -53,7 +53,7 @@
     <header>
         <div class="container">
             <h1>House on the Rock</h1>
-            <div class="subtitle">Music Machines Guide</div>
+            <div class="subtitle">Music Machines Archive</div>
         </div>
     </header>
 
@@ -63,15 +63,18 @@
             <a href="#tour2">Tour 2</a>
             <a href="#tour3">Tour 3</a>
             <a href="#unknown">Unknown Location</a>
-            <a href="#notes">Notes</a>
+            <a href="#notes">Archive Notes</a>
         </div>
     </nav>
 
     <main id="main-content" class="container">
         <section class="intro">
-            <h2>About This Guide</h2>
-            <p>This page lists all the animated, automated <strong>Music Machines</strong> that can be seen and/or heard at the <a href="http://www.houseontherock.com/" target="_blank" rel="noopener noreferrer">House on the Rock</a> attraction located on Highway 23 between Dodgeville and Spring Green, WI.</p>
+            <h2>Experience the Music Machines</h2>
+            <p>This comprehensive digital archive catalogs all the animated, automated <strong>Music Machines</strong> that can be seen and/or heard at the <a href="http://www.thehouseontherock.com/" target="_blank" rel="noopener noreferrer">House on the Rock</a> attraction located on Highway 23 between Dodgeville and Spring Green, WI.</p>
             <p>They are listed in the order they are found in the Tour of the House and other buildings on the grounds. Included are all musical instruments (#1-42), and all non-musical machines (#A-I) which require tokens.</p>
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="http://www.thehouseontherock.com/" target="_blank" rel="noopener noreferrer" class="cta-button">Visit House on the Rock</a>
+            </div>
             <div class="note" role="alert">
                 <strong>Tokens:</strong> Tokens can be purchased at numerous locations along the Tour at four for $1.00. Quarters cannot be used to play the machines, only tokens. Unused tokens can be redeemed or spent in the Gift Shop at the end of the Tour.
             </div>
@@ -80,7 +83,7 @@
         <section class="tour-section" id="tour1">
             <div class="tour-header">
                 <h3>Tour 1 - The Original Experience</h3>
-                <p>Includes the Gate House, House on the Rock, and Infinity Room</p>
+                <p>Begin your journey through the original House on the Rock, featuring the Gate House, original rooms, and the stunning Infinity Room</p>
             </div>
             <div class="tour-content">
                 <ol class="machine-list">
@@ -130,7 +133,7 @@
         <section class="tour-section" id="tour2">
             <div class="tour-header">
                 <h3>Tour 2 - Yesterday's World</h3>
-                <p>Includes Mill House, Streets of Yesterday, Heritage of the Sea, and Music of Yesterday</p>
+                <p>Explore the Mill House, Streets of Yesterday, Heritage of the Sea, and the incredible Music of Yesterday exhibit</p>
             </div>
             <div class="tour-content">
                 <ol class="machine-list" start="7">
@@ -286,7 +289,7 @@
         <section class="tour-section" id="tour3">
             <div class="tour-header">
                 <h3>Tour 3 - Wonders & Collections</h3>
-                <p>Includes the Organ Room, Circus Room, and various galleries</p>
+                <p>Discover the Organ Room, thrilling Circus Room, and explore fascinating weapon, oriental, armor, and crown jewel galleries</p>
             </div>
             <div class="tour-content">
                 <ol class="machine-list" start="37">
@@ -358,9 +361,10 @@
 
     <footer class="footer">
         <div class="container">
-            <p><strong>House on the Rock Music Machines Guide</strong></p>
+            <p><strong>House on the Rock Music Machines Archive</strong></p>
             <p>© 2024 House on the Rock Archive</p>
-            <p>Visit <a href="http://www.houseontherock.com/" target="_blank" rel="noopener noreferrer">House on the Rock</a> for current tour information</p>
+            <p>5754 State Road 23, Spring Green, WI 53588</p>
+            <p>Visit <a href="http://www.thehouseontherock.com/" target="_blank" rel="noopener noreferrer">House on the Rock</a> for current tour information</p>
             <p>Original content compiled by Doug Henkle</p>
         </div>
     </footer>
