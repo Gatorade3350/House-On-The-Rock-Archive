@@ -74,6 +74,91 @@ nav {
   box-shadow: var(--shadow-light);
 }
 
+/* Main navigation bar styling */
+.main-nav {
+  background: linear-gradient(90deg, #1a365d, #2d3748);
+  padding: 1.5rem 0;
+  border-bottom: 3px solid var(--accent-color);
+  position: sticky;
+  top: 0;
+  z-index: 101;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a,
+.nav-section {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.nav-section:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav a.active,
+.nav-section.active {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: white;
+  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+}
+
+/* Sub navigation bar styling */
+.sub-nav {
+  background: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 68px;
+  z-index: 100;
+  box-shadow: var(--shadow-light);
+}
+
+.sub-nav .container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sub-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid transparent;
+}
+
+.sub-nav a:hover {
+  background-color: var(--background-secondary);
+  color: var(--primary-color);
+  border-bottom-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
 nav .container {
   display: flex;
   justify-content: center;
@@ -204,6 +289,106 @@ main {
   letter-spacing: 0.5px;
 }
 
+/* New machine formatting styles */
+.machine-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.75rem;
+}
+
+.machine-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--gradient);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: var(--shadow);
+}
+
+.machine-name {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex: 1;
+}
+
+.machine-cost {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid var(--accent-color);
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.machine-cost strong {
+  color: var(--primary-color);
+}
+
+.machine-description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+  padding: 0.5rem 0;
+}
+
+.machine-description strong {
+  color: var(--primary-color);
+  font-style: normal;
+}
+
+.machine-songs {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  border-left: 4px solid #4caf50;
+  box-shadow: var(--shadow-light);
+}
+
+.machine-songs strong {
+  display: block;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.machine-songs ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.machine-songs li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.machine-songs li:last-child {
+  border-bottom: none;
+}
+
+.machine-songs li:hover {
+  color: var(--primary-color);
+  padding-left: 0.5rem;
+}
+
 .machine-details {
   margin-left: 0;
   color: var(--text-light);
@@ -301,6 +486,22 @@ main {
   animation: slideIn 0.8s ease-out;
 }
 
+/* Archive section styling */
+.archive-section {
+  background: white;
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 2px solid var(--background-secondary);
+  transition: all 0.3s ease;
+}
+
+.archive-section:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 16px rgba(66, 153, 225, 0.2);
+}
+
 .machine-item {
   animation: fadeInUp 0.6s ease-out;
   animation-fill-mode: both;
@@ -358,10 +559,14 @@ a:hover {
     font-size: 2.2rem;
   }
 
+  .main-nav .container,
+  .sub-nav .container,
   nav .container {
     gap: 1rem;
   }
 
+  .main-nav a,
+  .sub-nav a,
   nav a {
     padding: 0.6rem 1rem;
     font-size: 0.85rem;
@@ -380,12 +585,32 @@ a:hover {
     font-size: 1.5rem;
   }
 
+  .machine-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .machine-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .machine-name {
+    font-size: 1.1rem;
+  }
+
   .machine-item:hover {
     transform: none;
   }
 
   .machine-list {
     gap: 1rem;
+  }
+
+  .sub-nav {
+    top: 60px;
   }
 }
 
@@ -407,11 +632,15 @@ a:hover {
     font-size: 1rem;
   }
 
+  .main-nav .container,
+  .sub-nav .container,
   nav .container {
     flex-direction: column;
     align-items: center;
   }
 
+  .main-nav a,
+  .sub-nav a,
   nav a {
     width: 100%;
     text-align: center;
@@ -435,8 +664,28 @@ a:hover {
     padding: 1rem;
   }
 
+  .machine-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .machine-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .machine-number {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .machine-songs ul,
+  .machine-details ul {
+    padding-left: 1rem;
+  }
+
+  .sub-nav {
+    top: 50px;
   }
 }
 

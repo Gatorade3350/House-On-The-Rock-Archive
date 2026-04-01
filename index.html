@@ -54,14 +54,20 @@
         </div>
     </header>
 
-    <nav aria-label="Main navigation">
+    <nav class="main-nav" aria-label="Main navigation">
+        <div class="container">
+            <a href="#archive" class="nav-section active">Music Machines Archive</a>
+            <a href="#photos-videos" class="nav-section">Photos & Videos</a>
+            <a href="#literature" class="nav-section">Literature</a>
+        </div>
+    </nav>
+
+    <nav class="sub-nav" aria-label="Archive navigation">
         <div class="container">
             <a href="#tour1">Tour 1</a>
             <a href="#tour2">Tour 2</a>
             <a href="#tour3">Tour 3</a>
             <a href="#unknown">Unknown Location</a>
-            <a href="#photos-videos">Photos & Videos</a>
-            <a href="#literature">Literature</a>
             <a href="#notes">Archive Notes</a>
         </div>
     </nav>
@@ -79,7 +85,7 @@
             </div>
         </section>
 
-        <section class="tour-section" id="tour1">
+        <section class="tour-section" id="archive">
             <div class="tour-header">
                 <h3>Tour 1 - The Original Experience</h3>
                 <p>Begin your journey through the original House on the Rock, featuring the Gate House, original rooms, and the stunning Infinity Room</p>
@@ -87,49 +93,95 @@
             <div class="tour-content">
                 <ol class="machine-list">
                     <li class="machine-item">
-                        <div class="machine-name">The Gate House Ensemble</div>
+                        <div class="machine-header">
+                            <span class="machine-number">1.</span>
+                            <span class="machine-name">The Gate House Ensemble</span>
+                        </div>
                         <div class="machine-details">
-                            <p>Free, plays continuously</p>
-                            <div class="token-info">Features: Ravel's "Bolero", Grieg "Concerto", Tchaikovsky "Concerto"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> Free (plays continuously)</p>
+                            <div class="machine-songs">
+                                <strong>Featured Pieces:</strong>
+                                <ul>
+                                    <li>Ravel's "Bolero"</li>
+                                    <li>Grieg "Concerto"</li>
+                                    <li>Tchaikovsky "Concerto"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Gallery of the Bells</div>
+                        <div class="machine-header">
+                            <span class="machine-number">2.</span>
+                            <span class="machine-name">The Gallery of the Bells</span>
+                        </div>
                         <div class="machine-details">
-                            <p>Does not play</p>
+                            <p class="machine-cost"><strong>Status:</strong> Does not play</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Moon of Manakoora</div>
+                        <div class="machine-header">
+                            <span class="machine-number">3.</span>
+                            <span class="machine-name">The Moon of Manakoora</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Features: "Harbor Lights", "Hello Young Lovers"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <div class="machine-songs">
+                                <strong>Featured Pieces:</strong>
+                                <ul>
+                                    <li>"Harbor Lights"</li>
+                                    <li>"Hello Young Lovers"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Baby Grand Piano #3 (1921 A.B. Chase)</div>
+                        <div class="machine-header">
+                            <span class="machine-number">4.</span>
+                            <span class="machine-name">Baby Grand Piano #3 (1921 A.B. Chase)</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Extensive repertoire including "Everybody Loves Somebody", "Let Me Call You Sweetheart", and many more</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <div class="machine-songs">
+                                <strong>Featured Repertoire:</strong>
+                                <ul>
+                                    <li>"Everybody Loves Somebody" (4:22)</li>
+                                    <li>"Let Me Call You Sweetheart" (3:05)</li>
+                                    <li>"Same Ol' Love" (3:43)</li>
+                                    <li>"Candle in the Wind"</li>
+                                    <li>"The Homecoming" (4:03)</li>
+                                    <li>And many more romantic classics</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The House Grand Piano</div>
+                        <div class="machine-header">
+                            <span class="machine-number">5.</span>
+                            <span class="machine-name">The House Grand Piano</span>
+                        </div>
                         <div class="machine-details">
-                            <p>Features: "Hungarian Rhapsody No. 2"</p>
+                            <div class="machine-songs">
+                                <strong>Featured Piece:</strong>
+                                <ul>
+                                    <li>"Hungarian Rhapsody No. 2"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Unknown Instrument - "The Godfather"</div>
+                        <div class="machine-header">
+                            <span class="machine-number">6.</span>
+                            <span class="machine-name">Unknown Instrument - "The Godfather"</span>
+                        </div>
                         <div class="machine-details">
-                            <p>Free, plays continuously</p>
+                            <p class="machine-cost"><strong>Cost:</strong> Free (plays continuously)</p>
                         </div>
                     </li>
                 </ol>
             </div>
         </section>
 
-        <section class="tour-section" id="tour2">
+        <section class="tour-section archive-section" id="tour1">
             <div class="tour-header">
                 <h3>Tour 2 - Yesterday's World</h3>
                 <p>Explore the Mill House, Streets of Yesterday, Heritage of the Sea, and the incredible Music of Yesterday exhibit</p>
@@ -137,155 +189,297 @@
             <div class="tour-content">
                 <ol class="machine-list" start="7">
                     <li class="machine-item">
-                        <div class="machine-name">1893 The Regina Sublima Grand Music Box</div>
+                        <div class="machine-header">
+                            <span class="machine-number">7.</span>
+                            <span class="machine-name">1893 The Regina Sublima Grand Music Box</span>
+                        </div>
                         <div class="machine-details">
-                            <p>1 token</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 1 token</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Seeburg</div>
+                        <div class="machine-header">
+                            <span class="machine-number">8.</span>
+                            <span class="machine-name">The Seeburg</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Hupfeld Phonoliszt-Violina (1912/1913)</div>
+                        <div class="machine-header">
+                            <span class="machine-number">9.</span>
+                            <span class="machine-name">The Hupfeld Phonoliszt-Violina (1912/1913)</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">3 violins & piano - Features: "Shimmy Vamp", "Flight of the Bumblebee"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <p class="machine-description"><strong>Instrument:</strong> 3 violins & piano</p>
+                            <div class="machine-songs">
+                                <strong>Featured Pieces:</strong>
+                                <ul>
+                                    <li>"Shimmy Vamp"</li>
+                                    <li>"Flight of the Bumblebee"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Magician</div>
+                        <div class="machine-header">
+                            <span class="machine-number">10.</span>
+                            <span class="machine-name">The Magician</span>
+                        </div>
                         <div class="machine-details">
-                            <p>1 token</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 1 token</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Gladiator Calliope</div>
+                        <div class="machine-header">
+                            <span class="machine-number">11.</span>
+                            <span class="machine-name">The Gladiator Calliope</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Designed by Alex Jordan - Extensive military march repertoire</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <p class="machine-description"><strong>designer:</strong> Alex Jordan</p>
+                            <div class="machine-songs">
+                                <strong>Featured Military Marches:</strong>
+                                <ul>
+                                    <li>"Lights Out"</li>
+                                    <li>"Buckeye State"</li>
+                                    <li>"Entree Des Gladiateurs"</li>
+                                    <li>"National Progress"</li>
+                                    <li>"The Thunderer"</li>
+                                    <li>"Boy Scouts of America"</li>
+                                    <li>And more</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">"Octopus's Garden"</div>
+                        <div class="machine-header">
+                            <span class="machine-number">12.</span>
+                            <span class="machine-name">"Octopus's Garden"</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Designed by Alex Jordan, music by Ringo Starr</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <p class="machine-description"><strong>Designer:</strong> Alex Jordan | <strong>Composer:</strong> Ringo Starr (The Beatles)</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Nickelodeon Piano Company</div>
+                        <div class="machine-header">
+                            <span class="machine-number">13.</span>
+                            <span class="machine-name">The Nickelodeon Piano Company</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Wurlitzer CD Juke Box</div>
+                        <div class="machine-header">
+                            <span class="machine-number">14.</span>
+                            <span class="machine-name">Wurlitzer CD Juke Box</span>
+                        </div>
                         <div class="machine-details">
-                            <p>25 cents</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 25 cents</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Absinth House Piano</div>
+                        <div class="machine-header">
+                            <span class="machine-number">15.</span>
+                            <span class="machine-name">Absinth House Piano</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Pontalba Hearse</div>
+                        <div class="machine-header">
+                            <span class="machine-number">16.</span>
+                            <span class="machine-name">Pontalba Hearse</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Features: "When the Saints Go Marching In"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <div class="machine-songs">
+                                <strong>Featured Piece:</strong>
+                                <ul>
+                                    <li>"When the Saints Go Marching In"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Miss Kitty's Boudoir</div>
+                        <div class="machine-header">
+                            <span class="machine-number">17.</span>
+                            <span class="machine-name">Miss Kitty's Boudoir</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Features: "Tuff", "Yakety Sax"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <div class="machine-songs">
+                                <strong>Featured Pieces:</strong>
+                                <ul>
+                                    <li>"Tuff"</li>
+                                    <li>"Yakety Sax"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Peacock (92 Key Mortier organ)</div>
+                        <div class="machine-header">
+                            <span class="machine-number">18.</span>
+                            <span class="machine-name">The Peacock (92 Key Mortier organ)</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Features: "Tico Tico", "Flight Of The Bumble Bee"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <div class="machine-songs">
+                                <strong>Featured Pieces:</strong>
+                                <ul>
+                                    <li>"Tico Tico"</li>
+                                    <li>"Flight Of The Bumble Bee"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Blue Room</div>
+                        <div class="machine-header">
+                            <span class="machine-number">19.</span>
+                            <span class="machine-name">The Blue Room</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Features: "Anvil Chorus", "Poet & Peasant Overture"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <div class="machine-songs">
+                                <strong>Featured Pieces:</strong>
+                                <ul>
+                                    <li>"Anvil Chorus"</li>
+                                    <li>"Poet & Peasant Overture"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Franz Josef</div>
+                        <div class="machine-header">
+                            <span class="machine-number">20.</span>
+                            <span class="machine-name">The Franz Josef</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Features: Offenbach's "Can-Can Medley"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <div class="machine-songs">
+                                <strong>Featured Piece:</strong>
+                                <ul>
+                                    <li>Offenbach's "Can-Can Medley"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Mikado (118 Key Mortier organ)</div>
+                        <div class="machine-header">
+                            <span class="machine-number">21.</span>
+                            <span class="machine-name">The Mikado (118 Key Mortier organ)</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Features: "Dance Macabre", "Harem Bells", "Ritual Fire Dance"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <div class="machine-songs">
+                                <strong>Featured Pieces:</strong>
+                                <ul>
+                                    <li>"Dance Macabre"</li>
+                                    <li>"Harem Bells"</li>
+                                    <li>"Ritual Fire Dance"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Blue Danube</div>
+                        <div class="machine-header">
+                            <span class="machine-number">22.</span>
+                            <span class="machine-name">The Blue Danube</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Designed by Alex Jordan - Features: "The Blue Danube"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <p class="machine-description"><strong>Designer:</strong> Alex Jordan</p>
+                            <div class="machine-songs">
+                                <strong>Featured Piece:</strong>
+                                <ul>
+                                    <li>"The Blue Danube"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Cremona Player Piano (1914)</div>
+                        <div class="machine-header">
+                            <span class="machine-number">23.</span>
+                            <span class="machine-name">The Cremona Player Piano (1914)</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Eldorado</div>
+                        <div class="machine-header">
+                            <span class="machine-number">24.</span>
+                            <span class="machine-name">The Eldorado</span>
+                        </div>
                         <div class="machine-details">
-                            <p>1 token</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 1 token</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Aida</div>
+                        <div class="machine-header">
+                            <span class="machine-number">25.</span>
+                            <span class="machine-name">The Aida</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Puppet Piano</div>
+                        <div class="machine-header">
+                            <span class="machine-number">26.</span>
+                            <span class="machine-name">Puppet Piano</span>
+                        </div>
                         <div class="machine-details">
-                            <p>1 token</p>
-                            <div class="token-info">Features: "Yip-I-Addy-I-Ay"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 1 token</p>
+                            <div class="machine-songs">
+                                <strong>Featured Piece:</strong>
+                                <ul>
+                                    <li>"Yip-I-Addy-I-Ay"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Red Room</div>
+                        <div class="machine-header">
+                            <span class="machine-number">27.</span>
+                            <span class="machine-name">The Red Room</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
-                            <div class="token-info">Designed by Alex Jordan - Features: "Dance Of The Sugar Plum Fairy"</div>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
+                            <p class="machine-description"><strong>Designer:</strong> Alex Jordan</p>
+                            <div class="machine-songs">
+                                <strong>Featured Piece:</strong>
+                                <ul>
+                                    <li>"Dance Of The Sugar Plum Fairy" (from Nutcracker)</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The World's Largest Carousel</div>
+                        <div class="machine-header">
+                            <span class="machine-number">28.</span>
+                            <span class="machine-name">The World's Largest Carousel</span>
+                        </div>
                         <div class="machine-details">
-                            <p>Free, plays continuously</p>
-                            <div class="token-info">Features waltzes and polkas</div>
+                            <p class="machine-cost"><strong>Cost:</strong> Free (plays continuously)</p>
+                            <div class="machine-songs">
+                                <strong>Featured Music:</strong>
+                                <ul>
+                                    <li>Waltzes & Polkas</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 </ol>
             </div>
         </section>
 
-        <section class="tour-section" id="tour3">
+        <section class="tour-section archive-section" id="tour3">
             <div class="tour-header">
                 <h3>Tour 3 - Wonders & Collections</h3>
                 <p>Discover the Organ Room, thrilling Circus Room, and explore fascinating weapon, oriental, armor, and crown jewel galleries</p>
@@ -293,35 +487,47 @@
             <div class="tour-content">
                 <ol class="machine-list" start="37">
                     <li class="machine-item">
-                        <div class="machine-name">3 Organ Consoles</div>
+                        <div class="machine-header">
+                            <span class="machine-number">37.</span>
+                            <span class="machine-name">3 Organ Consoles</span>
+                        </div>
                         <div class="machine-details">
-                            <p>Never played in House on the Rock concerts</p>
+                            <p class="machine-cost"><strong>Status:</strong> Never played in House on the Rock concerts</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Unidentified Organ</div>
+                        <div class="machine-header">
+                            <span class="machine-number">38.</span>
+                            <span class="machine-name">Unidentified Organ</span>
+                        </div>
                         <div class="machine-details">
-                            <p>Free, plays continuously</p>
+                            <p class="machine-cost"><strong>Cost:</strong> Free (plays continuously)</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">The Lincoln Welte</div>
+                        <div class="machine-header">
+                            <span class="machine-number">39.</span>
+                            <span class="machine-name">The Lincoln Welte</span>
+                        </div>
                         <div class="machine-details">
-                            <p>2 tokens</p>
+                            <p class="machine-cost"><strong>Cost:</strong> 2 tokens</p>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Circus Room Orchestra and Band Wagon</div>
+                        <div class="machine-header">
+                            <span class="machine-number">40.</span>
+                            <span class="machine-name">Circus Room Orchestra and Band Wagon</span>
+                        </div>
                         <div class="machine-details">
-                            <p>40 piece band and 80 piece orchestra</p>
-                            <div class="token-info">Only percussion actually plays - others are recorded</div>
+                            <p class="machine-cost"><strong>Ensemble:</strong> 40 piece band & 80 piece orchestra</p>
+                            <p class="machine-description"><strong>Note:</strong> Only percussion actually plays - others are recorded</p>
                         </div>
                     </li>
                 </ol>
             </div>
         </section>
 
-        <section class="tour-section" id="unknown">
+        <section class="tour-section archive-section" id="unknown">
             <div class="tour-header">
                 <h3>Location Unknown</h3>
                 <p>Machines missed during 2006 inventory</p>
@@ -329,15 +535,34 @@
             <div class="tour-content">
                 <ol class="machine-list" start="41">
                     <li class="machine-item">
-                        <div class="machine-name">The Coinola</div>
+                        <div class="machine-header">
+                            <span class="machine-number">41.</span>
+                            <span class="machine-name">The Coinola</span>
+                        </div>
                         <div class="machine-details">
-                            <div class="token-info">Features: "Tennessee Waltz", "Seventy Six Trombones", "Alley Cat", "Beer Barrel Polka"</div>
+                            <div class="machine-songs">
+                                <strong>Featured Pieces:</strong>
+                                <ul>
+                                    <li>"Tennessee Waltz"</li>
+                                    <li>"Seventy Six Trombones"</li>
+                                    <li>"Alley Cat"</li>
+                                    <li>"Beer Barrel Polka"</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="machine-item">
-                        <div class="machine-name">Link Player Piano</div>
+                        <div class="machine-header">
+                            <span class="machine-number">42.</span>
+                            <span class="machine-name">Link Player Piano</span>
+                        </div>
                         <div class="machine-details">
-                            <div class="token-info">Extensive ragtime and popular music repertoire</div>
+                            <div class="machine-songs">
+                                <strong>Repertoire:</strong>
+                                <ul>
+                                    <li>Extensive ragtime and popular music collection</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 </ol>
@@ -450,4 +675,5 @@
         // document.head.appendChild(link);
     </script>
 </body>
+</html>
 </html>
