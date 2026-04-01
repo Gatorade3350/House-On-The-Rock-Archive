@@ -1282,7 +1282,7 @@ a:hover {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
@@ -1302,7 +1302,8 @@ a:hover {
 }
 
 .gallery-image-wrapper {
-  height: 200px;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes it square */
   background: var(--gradient);
   display: flex;
   align-items: center;
@@ -1670,7 +1671,7 @@ a:hover {
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
 
