@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Performance optimizations -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Page metadata -->
+    <title>House on the Rock - Photo & Video Gallery</title>
+    <meta name="description" content="Visual gallery of House on the Rock featuring photos and videos of the architectural wonder, music machines, and collections.">
+    <meta name="keywords" content="House on the Rock photos, videos, gallery, architecture, music machines, Wisconsin">
+    <meta name="author" content="House on the Rock Archive">
+    <meta name="robots" content="index, follow">
+
+    <!-- Performance and caching -->
+    <meta http-equiv="Cache-Control" content="max-age=86400, public">
+    <meta name="theme-color" content="#2c5530">
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="House on the Rock - Photo & Video Gallery">
+    <meta property="og:description" content="Visual gallery of House on the Rock's architectural wonder and collections">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://houseontherockarchive.com/gallery.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://houseontherockarchive.com/gallery.html">
+
+    <!-- Security headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>House on the Rock</h1>
+            <div class="subtitle">Photo & Video Gallery</div>
+            <div class="spotify-link">
+                <a href="https://open.spotify.com/playlist/YOUR_PLAYLIST_ID" target="_blank" rel="noopener noreferrer" aria-label="Listen to House on the Rock Music Machines playlist on Spotify">
+                    🎵 Listen on Spotify
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="nav-section">Home</a>
+            <a href="music.html" class="nav-section">Music Machines</a>
+            <a href="gallery.html" class="nav-section active">Gallery</a>
+            <a href="literature.html" class="nav-section">Literature</a>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+        <section class="intro">
+            <h2>Photo & Video Gallery</h2>
+            <p>Visual documentation of the House on the Rock and its incredible music machines, architectural features, and surrounding grounds.</p>
+            <div class="gallery-controls">
+                <button id="add-photos-btn" class="cta-button">📸 Add Your Photos</button>
+                <input type="file" id="gallery-upload" accept="image/*" multiple style="display: none;">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="machines">Music Machines</button>
+                <button class="filter-btn" data-filter="architecture">Architecture</button>
+                <button class="filter-btn" data-filter="collections">Collections</button>
+                <button class="filter-btn" data-filter="grounds">Grounds</button>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Featured Images -->
+                <div class="gallery-item" data-category="architecture">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🏛️</span>
+                            <p>House on the Rock Exterior</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>The House on the Rock</h4>
+                        <p>The iconic main building perched on its 60-foot rock foundation</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="architecture">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🌅</span>
+                            <p>Infinity Room</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>The Infinity Room</h4>
+                        <p>A 218-foot cantilevered room extending over the Wisconsin River valley</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="machines">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🎼</span>
+                            <p>Music Machines</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Mechanical Music Collection</h4>
+                        <p>42 automated musical instruments from player pianos to orchestras</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="collections">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🎠</span>
+                            <p>The Carousel</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>The World's Largest Carousel</h4>
+                        <p>269 hand-carved animals and figures in the world's largest indoor carousel</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="collections">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🔭</span>
+                            <p>Doll House</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>The Doll House</h4>
+                        <p>A massive 15-room dollhouse filled with miniature treasures</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="collections">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>⚔️</span>
+                            <p>Armory Collection</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Weapon & Armor Collection</h4>
+                        <p>Extensive collection of weapons, armor, and military artifacts</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="machines">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🎹</span>
+                            <p>Player Piano</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Antique Player Pianos</h4>
+                        <p>Vintage automatic pianos that play classical and popular music</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="grounds">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🌳</span>
+                            <p>Garden Areas</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>Garden & Grounds</h4>
+                        <p>Beautifully landscaped gardens and walking paths around the property</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="architecture">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🏰</span>
+                            <p>Gate House</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>The Gate House</h4>
+                        <p>The original entrance building with its distinctive architecture</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="machines">
+                    <div class="gallery-image-wrapper">
+                        <div class="gallery-image-placeholder">
+                            <span>🎺</span>
+                            <p>Calliope</p>
+                        </div>
+                    </div>
+                    <div class="gallery-caption">
+                        <h4>The Gladiator Calliope</h4>
+                        <p>A steam-powered circus calliope with military march repertoire</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h3>Video Gallery</h3>
+            <p>Videos showcasing the House on the Rock experience, music machines in action, and architectural features.</p>
+
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-placeholder">
+                        <span>🎥</span>
+                        <p>House on the Rock Tour</p>
+                    </div>
+                    <div class="video-caption">
+                        <h4>Virtual Tour</h4>
+                        <p>Experience the House on the Rock through video</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-placeholder">
+                        <span>🎼</span>
+                        <p>Music Machines in Action</p>
+                    </div>
+                    <div class="video-caption">
+                        <h4>Music Machines</h4>
+                        <p>Watch the automated instruments perform</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-placeholder">
+                        <span>🎠</span>
+                        <p>Carousel Ride</p>
+                    </div>
+                    <div class="video-caption">
+                        <h4>The Carousel</h4>
+                        <p>See the world's largest indoor carousel in motion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contribute">
+            <h3>Contribute to the Gallery</h3>
+            <div class="contribute-content">
+                <div class="contribute-text">
+                    <p>Help build this visual archive by contributing your high-quality photos and videos of the House on the Rock!</p>
+                    <ul>
+                        <li>Photos of music machines and their locations</li>
+                        <li>Architectural details and unique features</li>
+                        <li>Collection items and exhibits</li>
+                        <li>Garden and grounds photography</li>
+                        <li>Video footage of machines in operation</li>
+                    </ul>
+                </div>
+                <div class="contribute-note">
+                    <div class="note" role="alert">
+                        <strong>Important:</strong> Please respect the House on the Rock's photography policies. Only contribute photos/videos that comply with their guidelines and were taken with permission where required.
+                    </div>
+                    <p><strong>Contact:</strong> Submit contributions through the GitHub repository with proper attribution.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>House on the Rock</h4>
+                    <p>Wisconsin's most unique architectural wonder, featuring incredible collections and stunning views.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="music.html">Music Machines</a></li>
+                        <li><a href="literature.html">Literature & Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Visit</h4>
+                    <p>5754 State Road 23<br>Spring Green, WI 53588<br>(608) 935-3639</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 House on the Rock Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery filtering
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filterValue = button.dataset.filter;
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.dataset.category === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Photo upload functionality
+            const addPhotosBtn = document.getElementById('add-photos-btn');
+            const galleryUpload = document.getElementById('gallery-upload');
+            const galleryGrid = document.getElementById('gallery-grid');
+
+            addPhotosBtn.addEventListener('click', () => {
+                galleryUpload.click();
+            });
+
+            galleryUpload.addEventListener('change', (e) => {
+                const files = e.target.files;
+
+                Array.from(files).forEach(file => {
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const galleryItem = document.createElement('div');
+                            galleryItem.className = 'gallery-item';
+                            galleryItem.dataset.category = 'user-upload';
+                            galleryItem.innerHTML = `
+                                <div class="gallery-image-wrapper">
+                                    <img src="${e.target.result}" alt="${file.name}" class="uploaded-gallery-image">
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>User Uploaded</h4>
+                                    <p>${file.name}</p>
+                                </div>
+                            `;
+                            galleryGrid.appendChild(galleryItem);
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            });
+
+            // Service worker registration for caching
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js')
+                        .then(function(registration) {
+                            console.log('Service Worker registered successfully:', registration.scope);
+                        })
+                        .catch(function(error) {
+                            console.log('Service Worker registration failed:', error);
+                        });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
