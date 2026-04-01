@@ -55,6 +55,10 @@ header h1 {
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 2px;
+  background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .subtitle {
@@ -62,6 +66,8 @@ header h1 {
   font-size: 1.2rem;
   color: var(--text-light);
   font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 nav {
@@ -278,6 +284,75 @@ main {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
   border-color: var(--accent-color);
+}
+
+/* Machine image gallery styles */
+.machine-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.machine-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--background-light);
+  aspect-ratio: 3/4;
+  box-shadow: var(--shadow-light);
+  transition: all 0.3s ease;
+}
+
+.machine-image-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow);
+}
+
+.machine-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.machine-image-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+.machine-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.machine-image-placeholder span {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+/* Image caption */
+.image-caption {
+  background: var(--background-light);
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
 }
 
 .machine-name {
@@ -609,6 +684,12 @@ a:hover {
     gap: 1rem;
   }
 
+  .machine-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
   .sub-nav {
     top: 60px;
   }
@@ -684,6 +765,16 @@ a:hover {
     padding-left: 1rem;
   }
 
+  .machine-gallery {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .machine-image-placeholder {
+    min-height: 120px;
+  }
+
   .sub-nav {
     top: 50px;
   }
@@ -705,4 +796,60 @@ a:hover {
     box-shadow: none;
     border: 1px solid #ccc;
   }
+}
+
+/* Enhanced museum-style appearance */
+.tour-header h3 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.75rem;
+}
+
+.tour-header h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, white, white 30%, transparent 70%, white);
+  border-radius: 2px;
+}
+
+/* Machine list styling */
+.machine-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+/* Enhanced machine item appearance */
+.machine-item {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, white 0%, var(--background-secondary) 100%);
+  border-left: 5px solid var(--accent-color);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.machine-item:hover {
+  border-left-color: #4caf50;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Divider between tour sections */
+.tour-content {
+  position: relative;
+}
+
+.tour-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
 }
