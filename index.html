@@ -1087,7 +1087,55 @@
         // link.rel = 'prefetch';
         // link.href = '/styles.css';
         // document.head.appendChild(link);
+
+        // Image upload functionality for galleries
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add file input to each gallery
+            const galleries = document.querySelectorAll('.machine-gallery');
+            galleries.forEach((gallery, index) => {
+                const uploadContainer = document.createElement('div');
+                uploadContainer.className = 'image-upload-container';
+                uploadContainer.innerHTML = `
+                    <input type="file" id="image-upload-${index}" accept="image/*" multiple class="image-upload-input" style="display: none;">
+                    <label for="image-upload-${index}" class="image-upload-label">📸 Add Photos</label>
+                `;
+                gallery.appendChild(uploadContainer);
+            });
+
+            // Handle file uploads
+            document.addEventListener('change', function(e) {
+                if (e.target.classList.contains('image-upload-input')) {
+                    const files = e.target.files;
+                    const gallery = e.target.closest('.machine-gallery');
+                    const wrapper = gallery.querySelector('.machine-image-wrapper');
+
+                    // Remove placeholder if it exists
+                    const placeholder = wrapper.querySelector('.machine-image-placeholder');
+                    if (placeholder) {
+                        placeholder.remove();
+                    }
+
+                    // Clear existing uploaded images
+                    const existingImages = wrapper.querySelectorAll('.uploaded-image');
+                    existingImages.forEach(img => img.remove());
+
+                    // Add uploaded images
+                    Array.from(files).forEach(file => {
+                        if (file.type.startsWith('image/')) {
+                            const reader = new FileReader();
+                            reader.onload = function(e) {
+                                const img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.alt = file.name;
+                                img.className = 'uploaded-image';
+                                wrapper.appendChild(img);
+                            };
+                            reader.readAsDataURL(file);
+                        }
+                    });
+                }
+            });
+        });
     </script>
 </body>
-</html>
 </html>
